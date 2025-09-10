@@ -1,0 +1,136 @@
+.cart-preview {
+  position: absolute;
+  top: 80%;
+  right: 10px;
+  width: 420px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.cart-preview::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  right: 70px;
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+h3 {
+  border-bottom: 1px solid #eae4e8;
+}
+
+.product-in-cart {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eae4e8;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.product-in-cart img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.product-in-cart p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  flex: 1;
+}
+
+.product-in-cart .show-cart-page {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.product-in-cart .show-cart-page:hover {
+  background: #d9363e;
+}
+
+.show-cart-page {
+  margin-top: 10px;
+  width: 100%;
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.show-cart-page:hover {
+  background: #e65c00;
+}
+
+.total-price-tr {
+  display: flex;
+}
+
+.no-item-cart {
+  border-bottom: 1px solid #eae4e8;
+}
+
+.total-price-text {
+  flex: 1;
+  font-weight: 500;
+  color: #252a2b;
+  padding: 10px 0;
+  text-align: left !important;
+}
+
+.total-price-number {
+  font-weight: 600;
+  font-size: 16px;
+  color: red;
+  text-align: right;
+  padding: 10px 0;
+  text-align: right !important;
+}
+
+.product-line {
+  font-weight: 500;
+  color: #333;
+  background: #f9f9f9;
+  padding: 6px 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.btn-remove-to-cart {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.svg-cart {
+  stroke: #f9bb01;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+.cart-empty {
+  display: block;
+  padding: 10px 0 5px;
+}

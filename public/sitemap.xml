@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Người dùng -->
+  <url><loc>http://localhost:5173/</loc></url>
+  <url><loc>http://localhost:5173/userProfile</loc></url>
+  <url><loc>http://localhost:5173/cart</loc></url>
+  <url><loc>http://localhost:5173/orderOfUser</loc></url>
+  <url><loc>http://localhost:5173/search</loc></url>
+  <url><loc>http://localhost:5173/register</loc></url>
+
+  <!-- Trang chi tiết sản phẩm -->
+  <url><loc>http://localhost:5173/product/683c0d6a797da0a616034a3c</loc></url>
+  <url><loc>http://localhost:5173/product/683c0b66797da0a616034a23</loc></url>
+
+  <!-- Trang danh mục sản phẩm -->
+  <url><loc>http://localhost:5173/category/IIphone</loc></url>
+  <url><loc>http://localhost:5173/category/Samsung</loc></url>
+  <url><loc>http://localhost:5173/category/Oppo</loc></url>
+  <url><loc>http://localhost:5173/category/Xiaomi</loc></url>
+  <url><loc>http://localhost:5173/category/Realme</loc></url>
+
+</urlset>

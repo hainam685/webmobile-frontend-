@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/dashboard
+Disallow: /admin-login
+Disallow: /admin/products
+Disallow: /admin/orders
+Disallow: /admin/promotions
+Disallow: /admin/comments
+Allow: /
+
+Sitemap: http://localhost:5000/sitemap.xml

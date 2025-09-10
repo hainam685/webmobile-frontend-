@@ -1,0 +1,245 @@
+.product-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.product-detail-preview {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 80%;
+  z-index: 2000;
+}
+
+.product-image .main-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-info-preview {
+  width: 500px;
+  height: 410px;
+  position: relative;
+}
+
+.product-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-category,
+.product-color,
+.product-description {
+  font-size: 16px;
+  color: #555;
+}
+
+.product-description {
+  margin-top: 10px;
+}
+
+.product-price {
+  margin-top: 20px;
+}
+
+.product-price .price {
+  font-size: 20px;
+  color: #f44336;
+  font-weight: bold;
+}
+
+.product-info-preview .btn-addToCart {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 150px;
+  height: 33.6px;
+  padding: 0px 0px;
+  margin-top: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.product-info-preview .btn-addToCart .cart-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #263b96;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-info-preview .btn-addToCart .cart-icon .cart-img {
+  width: 16px;
+  height: 31px;
+  display: block;
+  margin: auto;
+  fill: #fff;
+  transition: all 0.3s ease;
+  transform: translateX(0);
+}
+
+.product-info-preview .btn-addToCart:hover {
+  background-color: #263b96;
+  color: #fff;
+}
+
+.product-info-preview .btn-addToCart:hover .cart-icon .cart-img {
+  transform: translateX(5px);
+}
+
+.close-icon {
+  position: absolute;
+  top: -15px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.close-icon:hover {
+  background-color: #d3d0d0;
+}
+
+.icon-x {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.icon-x::before,
+.icon-x::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 2px;
+  background-color: #555;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.icon-x::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.icon-x::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.close-icon:hover .icon-x::before,
+.close-icon:hover .icon-x::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+
+.selected-rom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-selected-rom {
+  border: 1px solid black;
+}
+
+.selected-color {
+  display: flex;
+  padding-top: 15px;
+  align-items: center;
+  gap: 20px;
+}
+
+.selected-color .color-button {
+  display: inline-block;
+  width: 32px !important;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: border 0.2s ease, transform 0.2s ease;
+}
+
+.selected-color .color-button:hover {
+  transform: scale(1.1);
+}
+
+.quantity-control {
+  display: flex;
+  padding-top: 15px;
+  align-items: center;
+  gap: 20px;
+}
+
+.quantity-control .btn-decrease {
+  border: 1px solid black;
+}
+
+.quantity-control .btn-increase {
+  border: 1px solid black;
+}
+
+.product-price {
+  display: flex;
+  padding-top: 15px;
+  align-items: center;
+  gap: 20px;
+}
+
+.image {
+  display: flex;
+  gap: 5px;
+  
+  margin-top: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.open-description {
+  color:#263b96;
+  border-bottom: 1px solid #263b96;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}

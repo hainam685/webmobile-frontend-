@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+}
+
+.showOrders {
+  margin-left: 220px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #0077b6;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  color: #ffffff;
+}
+
+.sidebar h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #90e0ef;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sidebar ul li:hover {
+  background-color: #354f52;
+}
+
+.sidebar ul li.active {
+  background-color: #52796f;
+}
+
+#head {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1e2a38;
+}
+
+.tableShowOrders {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tableShowOrders th,
+.tableShowOrders td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.tableShowOrders th {
+  background-color: #0077b6;
+  color: #ffffff;
+}
+
+.tableShowOrders tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btnToggleDetails {
+  background-color: #00b4d8;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-detail {
+  background-color: #00b4d8;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-list {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.product-list h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  max-width: 240px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  color: #222;
+  margin: 8px 0;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #e53935;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.btnCloseModal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.orderDetailsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orderDetailsTable th,
+.orderDetailsTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.orderDetailsTable th {
+  background-color: #f2f2f2;
+}
+
+.orderItemImage {
+  width: 60px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.column-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.column-header input {
+  width: 100%;
+  padding: 4px;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

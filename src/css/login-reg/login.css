@@ -1,0 +1,72 @@
+.login-overlay {
+    position: absolute;
+    top: 75px;
+    right: 120px;
+    width: 360px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .login-overlay::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: 105px;
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+  
+  .login-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .login-subtitle {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background: #ffb400;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background: #e6a200;
+  }
+  
+  .login-links {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .login-links a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 5px;
+  }
+  
+  .login-links a:hover {
+    text-decoration: underline;
+  }
+  
