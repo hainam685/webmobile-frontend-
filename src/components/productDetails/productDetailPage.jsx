@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useDispatch } from "react-redux";
 import { useParams } from 'react-router-dom';
 import { addToCartAsync } from "../../store/cart";
-import "../../css/productDetail/ProductDetailPage.css";
+import "../../css/productDetail/productDetailPage.css";
 import { Helmet } from 'react-helmet-async';
 import { toast } from 'react-toastify';
 
